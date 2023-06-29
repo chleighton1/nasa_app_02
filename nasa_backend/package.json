@@ -2,12 +2,13 @@
   "name": "nasaapp",
   "version": "1.0.0",
   "description": "Nasa Image of the day app",
-  "main": "./api/app.js",
+  "main": "app.js",
   "engines": {
     "node": "14.x"
   },
   "scripts": {
-    "start": "node ./api/app.js"
+    "start": "node app.js",
+    "vercel-build": "echo hello"
   },
   "author": "",
   "license": "ISC",
