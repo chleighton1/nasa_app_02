@@ -2,7 +2,7 @@
   "name": "nasaapp",
   "version": "1.0.0",
   "description": "Nasa Image of the day app",
-  "main": "app.js",
+  "main": "api/index.js",
   "engines": {
     "node": "14.x"
   },
