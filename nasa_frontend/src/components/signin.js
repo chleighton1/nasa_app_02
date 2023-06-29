@@ -34,9 +34,9 @@ export default class Signin extends Component {
       method: "POST",
       crossDomain: true,
       headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "text/plain",
+        // Accept: "application/json",
+        // "Access-Control-Allow-Origin": "*",
       },
       body: JSON.stringify({
         email,
