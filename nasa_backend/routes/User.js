@@ -25,6 +25,7 @@ const User = mongoose.model("UserInfo");
 
 router.post("/signup", async (req, res) => {
   const { fname, lname, email, password } = req.body;
+  
 
   const encryptedpassword = await bcrypt.hash(password, 10);
   try {

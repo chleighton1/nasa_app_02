@@ -9,7 +9,7 @@ app.use("/oauth", authRouter);
 app.use("/request", requestRouter);
 
 app.use(express.json());
-// app.use(cors());
+app.use(cors());
 
 if (process.env.PORT) {
   app.listen(process.env.PORT, () => {
