@@ -33,10 +33,11 @@ export default class Signin extends Component {
     fetch(`${process.env.REACT_APP_API_URL}/signin`, {
       method: "POST",
       crossDomain: true,
+      mode:"no-cors",
       headers: {
-        "Content-Type": "text/plain",
-        // Accept: "application/json",
-        // "Access-Control-Allow-Origin": "*",
+        "Content-Type": "application/json",
+        Accept: "application/json",
+        "Access-Control-Allow-Origin": "*",
       },
       body: JSON.stringify({
         email,
