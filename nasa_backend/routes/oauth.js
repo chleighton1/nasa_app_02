@@ -15,7 +15,7 @@ async function getUserData(access_token) {
 router.get("/", async function (req, res, next) {
   const code = req.query.code;
   try {
-    const redirectURL = "http://localhost:3000/oauth";
+    const redirectURL = `${process.env.REACT_APP_URL}/oauth`;
     const oAuth2Client = new OAuth2Client(
       process.env.CLIENT_ID,
       process.env.CLIENT_SECRET,
