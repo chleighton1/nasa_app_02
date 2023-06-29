@@ -2,12 +2,13 @@
   "name": "nasaapp",
   "version": "1.0.0",
   "description": "Nasa Image of the day app",
-  "main": "api/index.js",
+  "main": "/api/index.js",
   "engines": {
     "node": "14.x"
   },
   "scripts": {
-    "start": "node app.js",
+    "start": "node /api/index.js",
+    "server": "nodemon /api/index.js",
     "vercel-build": "echo hello"
   },
   "author": "",
