@@ -39,6 +39,9 @@ export default class Signup extends Component {
         } else {
           alert(data.error);
         }
+      })
+      .catch((error) => {
+        console.error('Error:', error);
       });
   }
   render() {
