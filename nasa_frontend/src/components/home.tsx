@@ -38,7 +38,7 @@ export default class Home extends Component<HomeProps, HomeState> {
 
       const userData = await response1.json();
       console.log(userData, "userData");
-      this.setState({ userData: userData.data });
+      this.setState({ userData: userData });
 
       const response2 = await fetch(
         "https://api.nasa.gov/planetary/apod?api_key=vlyhhp799gp1kecX50EEX2r5ZomDpm7y1hmMqvcG"
@@ -46,7 +46,7 @@ export default class Home extends Component<HomeProps, HomeState> {
       
       const nasaData = await response2.json();
       console.log(nasaData, "nasaData")
-      this.setState({ nasaData: nasaData.data });
+      this.setState({ nasaData: nasaData });
     } catch (error) {
       console.log(error)
     }
