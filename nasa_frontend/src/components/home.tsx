@@ -56,10 +56,12 @@ export default class Home extends Component<HomeProps, HomeState> {
     window.location.href = "./signin";
   };
   render() {
+    console.log(this.state.nasaData?.title)
+    console.log(this.state.nasaData?.url)
     return (
         <div className="nasa-img-div">
           <h1>IS THIS WORKING?</h1>
-          <p>console.log({this.state.nasaData?.title})</p>
+          <p>{this.state.nasaData?.title}</p>
           <h1 className="nasa-img-title">{this.state.nasaData?.title}</h1>
           <div className="nasa-img">
             <img src={this.state.nasaData?.url} alt="Nasa Picture of the Day" />
